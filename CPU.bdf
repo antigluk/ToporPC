@@ -1,0 +1,219 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 32 200 208 216)
+	(text "INPUT" (rect 133 0 162 9)(font "Arial" (font_size 6)))
+	(text "clock" (rect 9 0 34 10)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 32 184 208 200)
+	(text "INPUT" (rect 133 0 162 9)(font "Arial" (font_size 6)))
+	(text "reset" (rect 9 0 33 10)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 16)(font "Arial" (font_size 6)))
+)
+(block
+	(rect 352 152 672 304)
+	(text "BMC" (rect 5 5 30 17)(font "Arial" (font_size 8)))	(text "BMC" (rect 5 139 28 149)(font "Arial" ))	(block_io "reset" (input))
+	(block_io "clock" (input))
+	(block_io "ram_data[63..0]" (input))
+	(block_io "control[31..0]" (output))
+	(mapper
+		(pt 0 56)
+		(bidir)
+		(mapping "clock" "clock" )
+		(annotation_block (mapping)(rect 248 224 334 248))
+	)
+	(mapper
+		(pt 0 40)
+		(bidir)
+		(mapping "reset" "reset" )
+		(annotation_block (mapping)(rect 248 136 336 168))
+	)
+	(mapper
+		(pt 320 112)
+		(bidir)
+		(mapping "control[15..0]" "ext[15..0]" )
+		(annotation_block (mapping)(rect 688 304 824 336))
+	)
+	(mapper
+		(pt 320 80)
+		(bidir)
+		(mapping "control[20..16]" "op2[4..0]" )
+		(annotation_block (mapping)(rect 688 280 823 304))
+	)
+	(mapper
+		(pt 320 48)
+		(bidir)
+		(mapping "control[25..21]" "op1[4..0]" )
+		(annotation_block (mapping)(rect 680 136 815 160))
+	)
+	(mapper
+		(pt 320 24)
+		(bidir)
+		(mapping "control[29..26]" "cmd[3..0]" )
+		(annotation_block (mapping)(rect 680 112 819 136))
+	)
+	(mapper
+		(pt 320 144)
+		(bidir)
+		(mapping "control[30]" "flags_enable" )
+		(annotation_block (mapping)(rect 688 336 830 360))
+	)
+)
+(block
+	(rect 1032 144 1400 312)
+	(text "ALU" (rect 5 5 29 17)(font "Arial" (font_size 8)))	(text "ALU" (rect 5 155 26 165)(font "Arial" ))	(block_io "cmd[3..0]" (input))
+	(block_io "op1[4..0]" (input))
+	(block_io "op2[4..0]" (input))
+	(block_io "ext[15..0]" (input))
+	(block_io "flags_enable" (input))
+	(block_io "FLAGS[15..0]" (output))
+	(block_io "out[15..0]" (output))
+	(mapper
+		(pt 0 32)
+		(bidir)
+		(mapping "cmd[3..0]" "cmd[3..0]" )
+		(annotation_block (mapping)(rect 896 96 1016 128))
+	)
+	(mapper
+		(pt 0 56)
+		(bidir)
+		(mapping "op1[4..0]" "op1[4..0]" )
+		(annotation_block (mapping)(rect 904 128 1016 160))
+	)
+	(mapper
+		(pt 0 88)
+		(bidir)
+		(mapping "op2[4..0]" "op2[4..0]" )
+		(annotation_block (mapping)(rect 904 280 1016 312))
+	)
+	(mapper
+		(pt 0 120)
+		(bidir)
+		(mapping "ext[15..0]" "ext[15..0]" )
+		(annotation_block (mapping)(rect 904 312 1016 344))
+	)
+	(mapper
+		(pt 368 48)
+		(bidir)
+		(mapping "out[15..0]" "out[15..0]" )
+		(annotation_block (mapping)(rect 1408 136 1528 168))
+	)
+	(mapper
+		(pt 368 88)
+		(bidir)
+		(mapping "FLAGS[15..0]" "FLAGS[15..0]" )
+		(annotation_block (mapping)(rect 1416 248 1568 280))
+	)
+	(mapper
+		(pt 0 152)
+		(bidir)
+		(mapping "flags_enable" "flags_enable" )
+		(annotation_block (mapping)(rect 864 344 1018 368))
+	)
+)
+(connector
+	(text "FLAGS[15..0]" (rect 1408 224 1475 234)(font "Arial" ))
+	(pt 1400 232)
+	(pt 1504 232)
+	(bus)
+)
+(connector
+	(text "out[15..0]" (rect 1417 184 1464 194)(font "Arial" ))
+	(pt 1400 192)
+	(pt 1496 192)
+	(bus)
+)
+(connector
+	(text "cmd[3..0]" (rect 685 168 732 178)(font "Arial" ))
+	(pt 1032 176)
+	(pt 672 176)
+	(bus)
+)
+(connector
+	(text "reset" (rect 298 184 322 194)(font "Arial" ))
+	(pt 208 192)
+	(pt 352 192)
+)
+(connector
+	(text "op1[4..0]" (rect 683 184 726 194)(font "Arial" ))
+	(pt 1032 200)
+	(pt 672 200)
+	(bus)
+)
+(connector
+	(text "clock" (rect 330 200 355 210)(font "Arial" ))
+	(pt 208 208)
+	(pt 352 208)
+)
+(connector
+	(text "op2[4..0]" (rect 681 216 724 226)(font "Arial" ))
+	(pt 1032 232)
+	(pt 672 232)
+	(bus)
+)
+(connector
+	(text "ext[15..0]" (rect 680 256 727 266)(font "Arial" ))
+	(pt 1032 264)
+	(pt 672 264)
+	(bus)
+)
+(connector
+	(text "flags_enable" (rect 682 288 744 298)(font "Arial" ))
+	(pt 1032 296)
+	(pt 672 296)
+	(bus)
+)
+(title_block
+	(rect 192 -32 560 88)
+	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 10)(font "Arial" ))(text "NTUU \"KPI\" IO-02" (rect 56 2 203 19)(font "Arial" (font_size 12)))(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 31 10)(font "Arial" ))(text "Sun Mar 31 22:19:03 2013" (rect 56 3 236 18)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 61 10)(font "Arial" ))(text "Topor Team" (rect 56 2 156 19)(font "Arial" (font_size 12)))(border))
+	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 50 10)(font "Arial" ))(text "1.00" (rect 56 1 85 16)(font "Arial" (font_size 10)))(border))
+	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 10)(font "Arial" ))(text "1" (rect 34 4 42 19)(font "Arial" (font_size 10))))
+	(section (rect 280 72 368 96)(text "REV" (rect 2 1 27 11)(font "Arial" ))(text "A" (rect 43 1 55 16)(font "Arial" (font_size 10)))(border))
+	(section (rect 240 96 310 120)(text "SHEET" (rect 2 0 38 10)(font "Arial" ))(text "1" (rect 55 5 63 20)(font "Arial" (font_size 10))))
+	(section (rect 0 0 368 24)(text "TITLE" (rect 2 0 31 10)(font "Arial" ))(text "Topor CPU" (rect 56 2 149 19)(font "Arial" (font_size 12)))(border))
+	(drawing
+	)
+)
