@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 160 96)
 		(output)
-		(text "overflow" (rect 0 0 53 12)(font "Arial" (font_size 8)))
-		(text "overflow" (rect 113 84 159 95)(font "Arial" (font_size 8)))
+		(text "cout" (rect 0 0 24 12)(font "Arial" (font_size 8)))
+		(text "cout" (rect 136 84 157 95)(font "Arial" (font_size 8)))
 		(line (pt 160 96)(pt 80 96))
 	)
 	(drawing
