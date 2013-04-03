@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name TOP_LEVEL_ENTITY BMC
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "12.1 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:24:05  MARCH 30, 2013"
 set_global_assignment -name LAST_QUARTUS_VERSION "12.1 SP1"
@@ -48,9 +48,6 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SOURCE_FILE MicroROM.cmp
 set_global_assignment -name BDF_FILE CPU.bdf
 set_global_assignment -name BDF_FILE BMC.bdf -library Topor
@@ -60,6 +57,10 @@ set_global_assignment -name BDF_FILE ALU.bdf
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
 set_global_assignment -name BLOCK_DESIGN_NAMING QUARTUSII
 set_global_assignment -name BDF_FILE CalcU.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE MicroROM.qip
 set_global_assignment -name QIP_FILE mux21.qip
 set_global_assignment -name QIP_FILE inc16.qip

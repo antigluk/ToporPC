@@ -1,0 +1,235 @@
+/home/roma/KPI/arch/s2/Topor/shr16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/shr16.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shr16
+-- Compiling architecture SYN of shr16
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MicroROMHolder
+-- Compiling architecture bdf_type of MicroROMHolder
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/const0.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/const0.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity const0
+-- Compiling architecture SYN of const0
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/constFFFF.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/constFFFF.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity constFFFF
+-- Compiling architecture SYN of constffff
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/dc16x1.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/dc16x1.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dc16x1
+-- Compiling architecture SYN of dc16x1
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/const1.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/const1.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity const1
+-- Compiling architecture SYN of const1
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/ALU.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/ALU.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALU
+-- Compiling architecture bdf_type of ALU
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/LPM_AND.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/LPM_AND.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity LPM_AND
+-- Compiling architecture LPM_AND_architecture of LPM_AND
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/reg16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/reg16.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg16
+-- Compiling architecture SYN of reg16
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/mux21.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/mux21.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package LPM_COMPONENTS
+-- Compiling entity mux21
+-- Compiling architecture SYN of mux21
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/mux16to1x1bit.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/mux16to1x1bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package LPM_COMPONENTS
+-- Compiling entity mux16to1x1bit
+-- Compiling architecture SYN of mux16to1x1bit
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/shl16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/shl16.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shl16
+-- Compiling architecture SYN of shl16
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/OPSELECT.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/OPSELECT.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity OPSELECT
+-- Compiling architecture bdf_type of OPSELECT
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/adder16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/adder16.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder16
+-- Compiling architecture SYN of adder16
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/RAM.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/RAM.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RAM
+-- Compiling architecture SYN of ram
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/mux4to1x16bit.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/mux4to1x16bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package LPM_COMPONENTS
+-- Compiling entity mux4to1x16bit
+-- Compiling architecture SYN of mux4to1x16bit
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/counter8.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/counter8.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity counter8
+-- Compiling architecture SYN of counter8
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/CPU.vhd {0 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/CPU.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CPU
+-- Compiling architecture bdf_type of CPU
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(147): (vcom-1035) Formal port "ram_data" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(161): (vcom-1035) Formal port "wren" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(161): (vcom-1035) Formal port "data" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data0x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data10x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data11x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data12x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data13x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data14x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data15x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data1x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data2x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data3x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data4x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data5x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data6x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data7x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(166): (vcom-1035) Formal port "data9x" has OPEN or no actual associated with it.
+** Error: /home/roma/KPI/arch/s2/Topor/CPU.vhd(174): VHDL Compiler exiting
+
+} {8.0 27.0} {}} /home/roma/KPI/arch/s2/Topor/MicroROM.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/MicroROM.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MicroROM
+-- Compiling architecture SYN of microrom
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/CalcU.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/CalcU.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CalcU
+-- Compiling architecture bdf_type of CalcU
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/mux32to1x16bit.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/mux32to1x16bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package LPM_COMPONENTS
+-- Compiling entity mux32to1x16bit
+-- Compiling architecture SYN of mux32to1x16bit
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/inc16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/inc16.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity inc16
+-- Compiling architecture SYN of inc16
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/BMC.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/BMC.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BMC
+-- Compiling architecture bdf_type of BMC
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd {0 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Error: (vcom-11) Could not find work.lpm_components.
+** Error: /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd(28): (vcom-1195) Cannot find expanded name "work.lpm_components".
+** Error: /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd(28): Unknown expanded name.
+** Error: /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd(30): VHDL Compiler exiting
+
+} {6.0 10.0} {}} /home/roma/KPI/arch/s2/Topor/substractor16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/substractor16.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity substractor16
+-- Compiling architecture SYN of substractor16
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/mux16to1x16bit.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/mux16to1x16bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package LPM_COMPONENTS
+-- Compiling entity mux16to1x16bit
+-- Compiling architecture SYN of mux16to1x16bit
+
+} {} {}}

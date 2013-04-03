@@ -295,7 +295,7 @@ applicable agreement for further details.
 	(block_io "ram_data[31..0]" (input))
 	(block_io "clock" (input))
 	(block_io "FLAGS[15..0]" (output))
-	(block_io "out[15..0]" (output))
+	(block_io "out_data[15..0]" (output))
 	(block_io "ram_addr[15..0]" (output))
 	(mapper
 		(pt 0 32)
@@ -322,12 +322,6 @@ applicable agreement for further details.
 		(annotation_block (mapping)(rect 904 312 1016 344))
 	)
 	(mapper
-		(pt 368 48)
-		(bidir)
-		(mapping "out[15..0]" "out[15..0]" )
-		(annotation_block (mapping)(rect 1408 136 1528 168))
-	)
-	(mapper
 		(pt 368 88)
 		(bidir)
 		(mapping "FLAGS[15..0]" "FLAGS[15..0]" )
@@ -349,12 +343,12 @@ applicable agreement for further details.
 		(pt 0 104)
 		(bidir)
 		)
-)
-(connector
-	(text "out[15..0]" (rect 1417 184 1464 194)(font "Arial" ))
-	(pt 1400 192)
-	(pt 1496 192)
-	(bus)
+	(mapper
+		(pt 368 48)
+		(bidir)
+		(mapping "out_data[15..0]" "out_data[15..0]" )
+		(annotation_block (mapping)(rect 1408 136 1578 160))
+	)
 )
 (connector
 	(text "cmd[3..0]" (rect 685 168 732 178)(font "Arial" ))
@@ -476,7 +470,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "clock" (rect 410 640 432 650)(font "Arial" ))
+	(text "clock" (rect 410 640 435 650)(font "Arial" ))
 	(pt 464 648)
 	(pt 400 648)
 )
@@ -491,10 +485,16 @@ applicable agreement for further details.
 	(pt 1032 248)
 	(pt 960 248)
 )
+(connector
+	(text "out_data[15..0]" (rect 1417 184 1491 194)(font "Arial" ))
+	(pt 1400 192)
+	(pt 1496 192)
+	(bus)
+)
 (title_block
 	(rect 192 -32 560 88)
 	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 10)(font "Arial" ))(text "NTUU \"KPI\" IO-02" (rect 56 2 203 19)(font "Arial" (font_size 12)))(border))
-	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 31 10)(font "Arial" ))(text "Tue Apr  2 19:46:27 2013" (rect 56 3 228 18)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 31 10)(font "Arial" ))(text "Tue Apr  2 22:19:32 2013" (rect 56 3 228 18)(font "Arial" (font_size 10)))(date)(border))
 	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 61 10)(font "Arial" ))(text "Topor Team" (rect 56 2 156 19)(font "Arial" (font_size 12)))(border))
 	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 50 10)(font "Arial" ))(text "1.00" (rect 56 1 85 16)(font "Arial" (font_size 10)))(border))
 	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 10)(font "Arial" ))(text "1" (rect 34 4 42 19)(font "Arial" (font_size 10))))

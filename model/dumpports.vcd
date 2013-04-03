@@ -1,0 +1,16 @@
+$comment
+	File created using the following command:
+		vcd file dumpports.vcd -dumpports
+$end
+$date
+	Wed Apr  3 23:18:28 2013
+$end
+$version
+	dumpports ModelSim Version 10.1b
+$end
+$timescale
+	1ps
+$end
+$vcdclose
+#0
+$end
