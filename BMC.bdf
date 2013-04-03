@@ -619,13 +619,8 @@ applicable agreement for further details.
 	(rect 624 376 840 520)
 	(text "MicroROMHolder" (rect 5 5 99 17)(font "Arial" (font_size 8)))	(text "microROMHolder" (rect 5 131 89 141)(font "Arial" ))	(block_io "clock" (input))
 	(block_io "addr[10..0]" (input))
+	(block_io "enable_next" (input))
 	(block_io "cmd[47..0]" (output))
-	(mapper
-		(pt 0 56)
-		(bidir)
-		(mapping "addr[10..0]" "addr[10..0]" )
-		(annotation_block (mapping)(rect 488 448 614 472))
-	)
 	(mapper
 		(pt 216 8)
 		(bidir)
@@ -655,6 +650,18 @@ applicable agreement for further details.
 		(bidir)
 		(mapping "cmd[47..41]" "other_ctl[6..0]" )
 		(annotation_block (mapping)(rect 856 392 1005 416))
+	)
+	(mapper
+		(pt 0 128)
+		(bidir)
+		(mapping "enable_next" "enable_next" )
+		(annotation_block (mapping)(rect 456 520 608 552))
+	)
+	(mapper
+		(pt 0 56)
+		(bidir)
+		(mapping "addr[10..0]" "addr[10..0]" )
+		(annotation_block (mapping)(rect 488 448 614 472))
 	)
 )
 (connector
@@ -726,12 +733,6 @@ applicable agreement for further details.
 	(pt 480 488)
 )
 (connector
-	(text "addr[15..0]" (rect 570 424 623 434)(font "Arial" ))
-	(pt 512 432)
-	(pt 624 432)
-	(bus)
-)
-(connector
 	(text "delay[7..0]" (rect 848 376 901 386)(font "Arial" ))
 	(pt 840 384)
 	(pt 928 384)
@@ -741,16 +742,6 @@ applicable agreement for further details.
 	(text "control[31..0]" (rect 850 456 914 466)(font "Arial" ))
 	(pt 840 464)
 	(pt 1016 464)
-	(bus)
-)
-(connector
-	(pt 512 248)
-	(pt 512 296)
-	(bus)
-)
-(connector
-	(pt 512 296)
-	(pt 512 432)
 	(bus)
 )
 (connector
@@ -933,7 +924,27 @@ applicable agreement for further details.
 	(pt 536 296)
 	(pt 576 296)
 )
-(junction (pt 512 296))
+(connector
+	(text "enable_next" (rect 552 496 611 506)(font "Arial" ))
+	(pt 624 504)
+	(pt 544 504)
+)
+(connector
+	(pt 512 248)
+	(pt 512 296)
+	(bus)
+)
+(connector
+	(pt 512 296)
+	(pt 512 432)
+	(bus)
+)
+(connector
+	(text "addr[15..0]" (rect 567 424 620 434)(font "Arial" ))
+	(pt 512 432)
+	(pt 624 432)
+	(bus)
+)
 (junction (pt 480 488))
 (junction (pt 480 400))
 (junction (pt 1040 576))
@@ -947,3 +958,4 @@ applicable agreement for further details.
 (junction (pt 1040 704))
 (junction (pt 1040 720))
 (junction (pt 1040 736))
+(junction (pt 512 296))

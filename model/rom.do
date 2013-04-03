@@ -27,7 +27,8 @@ proc check_addr {addr data} {
 set result 0
 set result [expr $result + [check_addr 0 "FE0600000016"]]
 set result [expr $result + [check_addr 1 "FE0600078005"]]
-set result [expr $result + [check_addr 16 "FE0600000005"]]
+set result [expr $result + [check_addr 2 "FE060001D080"]]
+set result [expr $result + [check_addr 15 "FE0600000016"]]
 
 puts "$result"
 

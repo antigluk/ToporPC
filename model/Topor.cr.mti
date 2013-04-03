@@ -197,14 +197,6 @@ Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Compiling entity inc16
 -- Compiling architecture SYN of inc16
 
-} {} {}} /home/roma/KPI/arch/s2/Topor/BMC.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/BMC.vhd
-Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity BMC
--- Compiling architecture bdf_type of BMC
-
 } {} {}} /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd {0 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package STANDARD
@@ -215,7 +207,15 @@ Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 ** Error: /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd(28): Unknown expanded name.
 ** Error: /home/roma/KPI/arch/s2/Topor/lpm_xor_2.vhd(30): VHDL Compiler exiting
 
-} {6.0 10.0} {}} /home/roma/KPI/arch/s2/Topor/substractor16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/substractor16.vhd
+} {6.0 10.0} {}} /home/roma/KPI/arch/s2/Topor/BMC.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/BMC.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BMC
+-- Compiling architecture bdf_type of BMC
+
+} {} {}} /home/roma/KPI/arch/s2/Topor/substractor16.vhd {1 {vcom -work work -2002 -explicit /home/roma/KPI/arch/s2/Topor/substractor16.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO

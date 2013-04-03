@@ -3,38 +3,872 @@ K3
 13
 cModel Technology
 Z0 d/home/roma/KPI/arch/s2/Topor/model
-Emicrorom
-Z1 w1364722577
+Eadder16
+Z1 w1364897840
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 d/home/roma/KPI/arch/s2/Topor/model
-Z5 8./../MicroROM.vhd
-Z6 F./../MicroROM.vhd
+Z5 8/home/roma/KPI/arch/s2/Topor/adder16.vhd
+Z6 F/home/roma/KPI/arch/s2/Topor/adder16.vhd
 l0
 L42
-V>S^zEiJaT2RaY[V>;E@2_0
-!s100 8^g1=bK;h^iR5^JmfDQ?k2
+VlM;3m25C_ia7l1o@g?1JX0
 Z7 OV;C;10.1b;51
 32
+Z8 !s108 1365027776.375472
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/adder16.vhd|
+Z10 !s107 /home/roma/KPI/arch/s2/Topor/adder16.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 3[YKAbY]Lb=AzMb0?_Kk;2
 !i10b 1
-Z8 !s108 1365023862.466580
-Z9 !s90 ./../MicroROM.vhd|
-Z10 !s107 ./../MicroROM.vhd|
-o-O0
-Z11 tExplicit 1
 Asyn
 R2
 R3
-Z12 DEx4 work 8 microrom 0 22 >S^zEiJaT2RaY[V>;E@2_0
-l81
-L52
-Z13 V0GSeFk[L[QcGibfd7ndJB1
-Z14 !s100 Q^3YTBFnUdA4]L1fZkFEB2
+DEx4 work 7 adder16 0 22 lM;3m25C_ia7l1o@g?1JX0
+l76
+L53
+VC4;EkT:3D@]gaN5zabmzD0
 R7
 32
-!i10b 1
 R8
 R9
 R10
-o-O0
 R11
+R12
+!s100 GJJMbQL]lXJfC>oL?`R[T0
+!i10b 1
+Ealu
+Z13 w1364932507
+R2
+R3
+R4
+Z14 8/home/roma/KPI/arch/s2/Topor/ALU.vhd
+Z15 F/home/roma/KPI/arch/s2/Topor/ALU.vhd
+l0
+L24
+V:6_QJaMadRYX=0:>6UL;93
+R7
+32
+Z16 !s108 1365027776.416604
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/ALU.vhd|
+Z18 !s107 /home/roma/KPI/arch/s2/Topor/ALU.vhd|
+R11
+R12
+!s100 JJIDc]PV=S7jU0oP[WY322
+!i10b 1
+Abdf_type
+R2
+R3
+DEx4 work 3 alu 0 22 :6_QJaMadRYX=0:>6UL;93
+l272
+L43
+VeAzb[<1?UbXTQzCHzX8_m1
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 7Q]_mN<[_zT?^B`]0XI7^3
+!i10b 1
+Ebmc
+Z19 w1365027683
+R2
+R3
+R4
+Z20 8/home/roma/KPI/arch/s2/Topor/BMC.vhd
+Z21 F/home/roma/KPI/arch/s2/Topor/BMC.vhd
+l0
+L24
+VmFKVCoh[PioR<i<EXJBWX0
+R7
+32
+Z22 !s108 1365027776.462497
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/BMC.vhd|
+Z24 !s107 /home/roma/KPI/arch/s2/Topor/BMC.vhd|
+R11
+R12
+!s100 zGFLZ40>=C]2hEJI3iLT50
+!i10b 1
+Abdf_type
+R2
+R3
+DEx4 work 3 bmc 0 22 mFKVCoh[PioR<i<EXJBWX0
+l122
+L36
+VWzTDDaaPBh7]aTho[LghI3
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 ET7nV6F32oB=R2eCh@4<=3
+!i10b 1
+Ecalcu
+Z25 w1365005438
+R2
+R3
+R4
+Z26 8/home/roma/KPI/arch/s2/Topor/CalcU.vhd
+Z27 F/home/roma/KPI/arch/s2/Topor/CalcU.vhd
+l0
+L24
+V:n6RDAR<:ZXHADl2oiYRH1
+R7
+32
+Z28 !s108 1365027777.469099
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/CalcU.vhd|
+Z30 !s107 /home/roma/KPI/arch/s2/Topor/CalcU.vhd|
+R11
+R12
+!s100 3mBagQnNUQ;7IF8I3BCZ52
+!i10b 1
+Abdf_type
+R2
+R3
+DEx4 work 5 calcu 0 22 :n6RDAR<:ZXHADl2oiYRH1
+l108
+L43
+VhK_LKg8]?P=f0b9;MPNgG2
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 d_4i<W_GdFDHo>;D?d=RW3
+!i10b 1
+Econst0
+Z31 w1364669190
+R2
+R3
+R4
+Z32 8/home/roma/KPI/arch/s2/Topor/const0.vhd
+Z33 F/home/roma/KPI/arch/s2/Topor/const0.vhd
+l0
+L42
+V<[NL9C1nIJWk7HfPec?9`2
+R7
+32
+Z34 !s108 1365027776.502998
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/const0.vhd|
+Z36 !s107 /home/roma/KPI/arch/s2/Topor/const0.vhd|
+R11
+R12
+!s100 h5iV;H_]1@gl;W40b`h2c0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 6 const0 0 22 <[NL9C1nIJWk7HfPec?9`2
+l68
+L50
+VXg52zJ4??Zc@20^z?MnMn2
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 65Dn4T10mQHQZ5`:ga3eM3
+!i10b 1
+Econst1
+Z37 w1364747664
+R2
+R3
+R4
+Z38 8/home/roma/KPI/arch/s2/Topor/const1.vhd
+Z39 F/home/roma/KPI/arch/s2/Topor/const1.vhd
+l0
+L42
+V^KQ6>SJHKog<_KOVC9LXh0
+R7
+32
+Z40 !s108 1365027776.541154
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/const1.vhd|
+Z42 !s107 /home/roma/KPI/arch/s2/Topor/const1.vhd|
+R11
+R12
+!s100 T:baQcLQnEIM>L90jbP>`1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 6 const1 0 22 ^KQ6>SJHKog<_KOVC9LXh0
+l68
+L50
+VYf@CNf=A<o8lP9`5ZNiK;1
+R7
+32
+R40
+R41
+R42
+R11
+R12
+!s100 [Ql=:_<[V4b>gNiULFm8;3
+!i10b 1
+Econstffff
+Z43 w1364747692
+R2
+R3
+R4
+Z44 8/home/roma/KPI/arch/s2/Topor/constFFFF.vhd
+Z45 F/home/roma/KPI/arch/s2/Topor/constFFFF.vhd
+l0
+L42
+VL?DdoQCI7E_WCdJoRDXTT1
+R7
+32
+Z46 !s108 1365027776.588425
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/constFFFF.vhd|
+Z48 !s107 /home/roma/KPI/arch/s2/Topor/constFFFF.vhd|
+R11
+R12
+!s100 `XSQPT5PMR0c@m<A6h3mm0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 9 constffff 0 22 L?DdoQCI7E_WCdJoRDXTT1
+l68
+L50
+VE8nUURjFJkF0cT7_RM`@[0
+R7
+32
+R46
+R47
+R48
+R11
+R12
+!s100 [B[R:31Nz;XeC4dJmJflL1
+!i10b 1
+Ecounter8
+Z49 w1364670032
+R2
+R3
+R4
+Z50 8/home/roma/KPI/arch/s2/Topor/counter8.vhd
+Z51 F/home/roma/KPI/arch/s2/Topor/counter8.vhd
+l0
+L42
+VKUInR2M^D<QlElhdEm;d43
+R7
+32
+Z52 !s108 1365027776.622287
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/counter8.vhd|
+Z54 !s107 /home/roma/KPI/arch/s2/Topor/counter8.vhd|
+R11
+R12
+!s100 lRA:0L8Xn^P3KZmV:z7@:0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 8 counter8 0 22 KUInR2M^D<QlElhdEm;d43
+l77
+L54
+V5;4noHnzK>:l;k3:5dPC@2
+R7
+32
+R52
+R53
+R54
+R11
+R12
+!s100 Yg4NZF>JNC5LH7z^N2hNn1
+!i10b 1
+Ecpu
+w1364930638
+R2
+R3
+R4
+8/home/roma/KPI/arch/s2/Topor/CPU.vhd
+F/home/roma/KPI/arch/s2/Topor/CPU.vhd
+l0
+L24
+VFQic59Hn_zOaMdnAWOBG32
+R7
+32
+R11
+R12
+!s100 `GTQYLMinojTfeP_>8B:@3
+!i10b 1
+!s108 1365027776.659836
+!s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/CPU.vhd|
+!s107 /home/roma/KPI/arch/s2/Topor/CPU.vhd|
+Edc16x1
+Z55 w1364932107
+R2
+R3
+R4
+Z56 8/home/roma/KPI/arch/s2/Topor/dc16x1.vhd
+Z57 F/home/roma/KPI/arch/s2/Topor/dc16x1.vhd
+l0
+L42
+VT1b^@<E4:5AI>9`YNUZMH2
+R7
+32
+Z58 !s108 1365027776.695723
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/dc16x1.vhd|
+Z60 !s107 /home/roma/KPI/arch/s2/Topor/dc16x1.vhd|
+R11
+R12
+!s100 Gcn0mIHQ5<QNSo@SNLVBU0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 6 dc16x1 0 22 T1b^@<E4:5AI>9`YNUZMH2
+l132
+L82
+V;EdmFM;;zBX^5^0bJ[mJK1
+R7
+32
+R58
+R59
+R60
+R11
+R12
+!s100 D?PX_9WPQ@_c:aS56Ig`a2
+!i10b 1
+Einc16
+Z61 w1364668442
+R2
+R3
+R4
+Z62 8/home/roma/KPI/arch/s2/Topor/inc16.vhd
+Z63 F/home/roma/KPI/arch/s2/Topor/inc16.vhd
+l0
+L42
+VnlGaAVI15Yab?iZi6]o[<2
+R7
+32
+Z64 !s108 1365027776.741527
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/inc16.vhd|
+Z66 !s107 /home/roma/KPI/arch/s2/Topor/inc16.vhd|
+R11
+R12
+!s100 ee<fSAbXV<0ckD2bPj:fB2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 5 inc16 0 22 nlGaAVI15Yab?iZi6]o[<2
+l74
+L51
+VQ0j6X:FDng@iUkXKQCJdn0
+R7
+32
+R64
+R65
+R66
+R11
+R12
+!s100 VQaXZAaVgPdg8GOg<X5l72
+!i10b 1
+Elpm_and
+Z67 w1365010834
+R2
+R3
+R4
+Z68 8/home/roma/KPI/arch/s2/Topor/LPM_AND.vhd
+Z69 F/home/roma/KPI/arch/s2/Topor/LPM_AND.vhd
+l0
+L29
+V2STFc8K4AdQ4`Uk:[d2g?3
+R7
+32
+Z70 !s108 1365027777.606788
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/LPM_AND.vhd|
+Z72 !s107 /home/roma/KPI/arch/s2/Topor/LPM_AND.vhd|
+R11
+R12
+!s100 0m?VH8edXh[UG5H4>;Cmm1
+!i10b 1
+Alpm_and_architecture
+R2
+R3
+DEx4 work 7 lpm_and 0 22 2STFc8K4AdQ4`Uk:[d2g?3
+l48
+L45
+VkXzbZkUCllN>nC@Ldf1<f3
+R7
+32
+R70
+R71
+R72
+R11
+R12
+!s100 8AcAhfVWlghB<mB`VZ;oZ0
+!i10b 1
+Emicrorom
+Z73 w1364722577
+R2
+R3
+R4
+Z74 8/home/roma/KPI/arch/s2/Topor/MicroROM.vhd
+Z75 F/home/roma/KPI/arch/s2/Topor/MicroROM.vhd
+l0
+L42
+V:nFV`n85EUzCEFFE_feL33
+R7
+32
+Z76 !s108 1365027776.791963
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/MicroROM.vhd|
+Z78 !s107 /home/roma/KPI/arch/s2/Topor/MicroROM.vhd|
+R11
+R12
+!s100 8^g1=bK;h^iR5^JmfDQ?k2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 8 microrom 0 22 :nFV`n85EUzCEFFE_feL33
+l81
+L52
+V7RXib8:2R6X][0I<e4E>z2
+R7
+32
+R76
+R77
+R78
+R11
+R12
+!s100 Q^3YTBFnUdA4]L1fZkFEB2
+!i10b 1
+Emicroromholder
+Z79 w1365028154
+R2
+R3
+R4
+Z80 8/home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd
+Z81 F/home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd
+l0
+L24
+Vj>`HO[2eGORhXI6S6DbN30
+!s100 Tc70Vd7`R>zh=?4PQzSV43
+R7
+32
+!i10b 1
+Z82 !s108 1365028192.816481
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd|
+Z84 !s107 /home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd|
+R11
+R12
+Abdf_type
+R2
+R3
+Z85 DEx4 work 14 microromholder 0 22 j>`HO[2eGORhXI6S6DbN30
+l56
+L34
+Z86 V4AY?UnVj0?G_El_g?E>T92
+Z87 !s100 oeWM2GlS2M9^P@zSA@IJ_2
+R7
+32
+!i10b 1
+R82
+R83
+R84
+R11
+R12
+Emux16to1x16bit
+Z88 w1364751010
+Z89 DPx3 lpm 14 lpm_components 0 22 QP=H4OR=`gFH<P:[5cCAR0
+R2
+R3
+R4
+Z90 8/home/roma/KPI/arch/s2/Topor/mux16to1x16bit.vhd
+Z91 F/home/roma/KPI/arch/s2/Topor/mux16to1x16bit.vhd
+l0
+L42
+VkZmCX7`Mh4HaUC7dESAl@1
+R7
+32
+Z92 !s108 1365027776.967214
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/mux16to1x16bit.vhd|
+Z94 !s107 /home/roma/KPI/arch/s2/Topor/mux16to1x16bit.vhd|
+R11
+R12
+!s100 P1>^f;PimWgJQanOBVj670
+!i10b 1
+Asyn
+R89
+R2
+R3
+DEx4 work 14 mux16to1x16bit 0 22 kZmCX7`Mh4HaUC7dESAl@1
+l90
+L67
+VdF5eJUMABnE:3EkDJoS@:0
+R7
+32
+R92
+R93
+R94
+R11
+R12
+!s100 Wa<WaSUfLVoLzVzcl0I9[0
+!i10b 1
+Emux16to1x1bit
+Z95 w1364895851
+R89
+R2
+R3
+R4
+Z96 8/home/roma/KPI/arch/s2/Topor/mux16to1x1bit.vhd
+Z97 F/home/roma/KPI/arch/s2/Topor/mux16to1x1bit.vhd
+l0
+L42
+VoF19k_JH5B0Ua3KHQJE5X1
+R7
+32
+Z98 !s108 1365027776.920835
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/mux16to1x1bit.vhd|
+Z100 !s107 /home/roma/KPI/arch/s2/Topor/mux16to1x1bit.vhd|
+R11
+R12
+!s100 kW`dE=OV47MK?82hGlo]U0
+!i10b 1
+Asyn
+R89
+R2
+R3
+DEx4 work 13 mux16to1x1bit 0 22 oF19k_JH5B0Ua3KHQJE5X1
+l91
+L67
+V263_B]URom_9=ATA1LNRi2
+R7
+32
+R98
+R99
+R100
+R11
+R12
+!s100 ^Jg^O:X64;1gboiOUgm6o1
+!i10b 1
+Emux21
+Z101 w1364668224
+R89
+R2
+R3
+R4
+Z102 8/home/roma/KPI/arch/s2/Topor/mux21.vhd
+Z103 F/home/roma/KPI/arch/s2/Topor/mux21.vhd
+l0
+L42
+V_G<7kGB5j3Co_Uzh<DMae1
+R7
+32
+Z104 !s108 1365027777.031908
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/mux21.vhd|
+Z106 !s107 /home/roma/KPI/arch/s2/Topor/mux21.vhd|
+R11
+R12
+!s100 hd^NeKCAP8lCzF5CIVUE^1
+!i10b 1
+Asyn
+R89
+R2
+R3
+DEx4 work 5 mux21 0 22 _G<7kGB5j3Co_Uzh<DMae1
+l64
+L53
+VD;f:HL65BMN64G?RlIZYD3
+R7
+32
+R104
+R105
+R106
+R11
+R12
+!s100 Z^GXOE:hhWfgVLj0n6IOb0
+!i10b 1
+Emux32to1x16bit
+Z107 w1364747242
+R89
+R2
+R3
+R4
+Z108 8/home/roma/KPI/arch/s2/Topor/mux32to1x16bit.vhd
+Z109 F/home/roma/KPI/arch/s2/Topor/mux32to1x16bit.vhd
+l0
+L42
+V7BX82[Zb0i:MXXhg_`o`31
+R7
+32
+Z110 !s108 1365027777.078790
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/mux32to1x16bit.vhd|
+Z112 !s107 /home/roma/KPI/arch/s2/Topor/mux32to1x16bit.vhd|
+R11
+R12
+!s100 PlTYg02<ZKaZ[Nki^99kd3
+!i10b 1
+Asyn
+R89
+R2
+R3
+DEx4 work 14 mux32to1x16bit 0 22 7BX82[Zb0i:MXXhg_`o`31
+l122
+L83
+VJ7TA1OjOHU2:`WkDEZRB_0
+R7
+32
+R110
+R111
+R112
+R11
+R12
+!s100 W[^hMb@20R0NGD0JDLg7G1
+!i10b 1
+Emux4to1x16bit
+Z113 w1364920777
+R89
+R2
+R3
+R4
+Z114 8/home/roma/KPI/arch/s2/Topor/mux4to1x16bit.vhd
+Z115 F/home/roma/KPI/arch/s2/Topor/mux4to1x16bit.vhd
+l0
+L42
+VYLi]Rd^]74h=e4OzVG>dR3
+R7
+32
+Z116 !s108 1365027776.874169
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/mux4to1x16bit.vhd|
+Z118 !s107 /home/roma/KPI/arch/s2/Topor/mux4to1x16bit.vhd|
+R11
+R12
+!s100 he3B@5BjfQDYaHbKdgfQ70
+!i10b 1
+Asyn
+R89
+R2
+R3
+DEx4 work 13 mux4to1x16bit 0 22 YLi]Rd^]74h=e4OzVG>dR3
+l66
+L55
+VNz:Qei7leIA6RnQgHUWjd1
+R7
+32
+R116
+R117
+R118
+R11
+R12
+!s100 mRY53PO??;gWj^6Z9Q4kk0
+!i10b 1
+Eopselect
+Z119 w1362298824
+R2
+R3
+R4
+Z120 8/home/roma/KPI/arch/s2/Topor/OPSELECT.vhd
+Z121 F/home/roma/KPI/arch/s2/Topor/OPSELECT.vhd
+l0
+L24
+VH`R]G1cml@<E6=fdmZllc0
+R7
+32
+Z122 !s108 1365027777.162976
+Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/OPSELECT.vhd|
+Z124 !s107 /home/roma/KPI/arch/s2/Topor/OPSELECT.vhd|
+R11
+R12
+!s100 T54<Jb1?JLC=oWVJ?1jUc1
+!i10b 1
+Abdf_type
+R2
+R3
+DEx4 work 8 opselect 0 22 H`R]G1cml@<E6=fdmZllc0
+l112
+L52
+VhI>SzBe<@BejIUQ2iDYiV3
+R7
+32
+R122
+R123
+R124
+R11
+R12
+!s100 0TIIclai7<zLBORjUoCo:2
+!i10b 1
+Eram
+Z125 w1364920712
+R2
+R3
+R4
+Z126 8/home/roma/KPI/arch/s2/Topor/RAM.vhd
+Z127 F/home/roma/KPI/arch/s2/Topor/RAM.vhd
+l0
+L42
+VfN;^eYI^7ZdagEjj8O]cc0
+R7
+32
+Z128 !s108 1365027777.264523
+Z129 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/RAM.vhd|
+Z130 !s107 /home/roma/KPI/arch/s2/Topor/RAM.vhd|
+R11
+R12
+!s100 [M6DH5I1C@JP;BMok2OeW3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 3 ram 0 22 fN;^eYI^7ZdagEjj8O]cc0
+l85
+L54
+VAAS4II`=:XB_n=`ijAOc_0
+R7
+32
+R128
+R129
+R130
+R11
+R12
+!s100 i86e>07?QCdXO_==Vnmic2
+!i10b 1
+Ereg16
+Z131 w1364668821
+R2
+R3
+R4
+Z132 8/home/roma/KPI/arch/s2/Topor/reg16.vhd
+Z133 F/home/roma/KPI/arch/s2/Topor/reg16.vhd
+l0
+L42
+V[SBC>i50<`bQ`CNAeWh111
+R7
+32
+Z134 !s108 1365027777.307400
+Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/reg16.vhd|
+Z136 !s107 /home/roma/KPI/arch/s2/Topor/reg16.vhd|
+R11
+R12
+!s100 k?_8GncQg[J<0RocK6BVd3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 5 reg16 0 22 [SBC>i50<`bQ`CNAeWh111
+l75
+L54
+VUfCVJS^>DiXmh0?[?YfJB3
+R7
+32
+R134
+R135
+R136
+R11
+R12
+!s100 P_`jaX2OBIg]lCPY=B;3j1
+!i10b 1
+Eshl16
+Z137 w1364755329
+R2
+R3
+R4
+Z138 8/home/roma/KPI/arch/s2/Topor/shl16.vhd
+Z139 F/home/roma/KPI/arch/s2/Topor/shl16.vhd
+l0
+L42
+VRkCBeGU=?Db2eU=YmXLJk2
+R7
+32
+Z140 !s108 1365027777.347789
+Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/shl16.vhd|
+Z142 !s107 /home/roma/KPI/arch/s2/Topor/shl16.vhd|
+R11
+R12
+!s100 3oA<fAYR:K@H0eg0>d0UV3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 5 shl16 0 22 RkCBeGU=?Db2eU=YmXLJk2
+l77
+L53
+VA?;^8I9=0PKoK2VdDM^Yj3
+R7
+32
+R140
+R141
+R142
+R11
+R12
+!s100 fnjC60nA0;2G2ZYHhNTRi3
+!i10b 1
+Eshr16
+Z143 w1364755226
+R2
+R3
+R4
+Z144 8/home/roma/KPI/arch/s2/Topor/shr16.vhd
+Z145 F/home/roma/KPI/arch/s2/Topor/shr16.vhd
+l0
+L42
+V^a8ll;9Oka6QFKDkOkODo1
+R7
+32
+Z146 !s108 1365027777.387659
+Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/shr16.vhd|
+Z148 !s107 /home/roma/KPI/arch/s2/Topor/shr16.vhd|
+R11
+R12
+!s100 e4kKT[7;`Rn=2k9^FV_zI1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 5 shr16 0 22 ^a8ll;9Oka6QFKDkOkODo1
+l77
+L53
+VP2=Tm;0?S;3T]@HEN`GK]3
+R7
+32
+R146
+R147
+R148
+R11
+R12
+!s100 4[R76ioP`3ozX:cDJ01=]1
+!i10b 1
+Esubstractor16
+Z149 w1364897815
+R2
+R3
+R4
+Z150 8/home/roma/KPI/arch/s2/Topor/substractor16.vhd
+Z151 F/home/roma/KPI/arch/s2/Topor/substractor16.vhd
+l0
+L42
+VCo3jeC`=fHmXU9hTdKXT50
+R7
+32
+Z152 !s108 1365027777.430239
+Z153 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/roma/KPI/arch/s2/Topor/substractor16.vhd|
+Z154 !s107 /home/roma/KPI/arch/s2/Topor/substractor16.vhd|
+R11
+R12
+!s100 XM2MEWnbT>09Me2C94]CW0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 13 substractor16 0 22 Co3jeC`=fHmXU9hTdKXT50
+l76
+L53
+V_i@o85Zim@co>kMN]To]^1
+R7
+32
+R152
+R153
+R154
+R11
+R12
+!s100 D0CnJCWDj@EEBNIWN1gXa1
+!i10b 1

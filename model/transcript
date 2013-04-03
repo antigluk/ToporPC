@@ -1,8 +1,143 @@
-# source calcu.do 
-# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MicroROM
-# -- Compiling architecture SYN of microrom
-# vsim -quiet work.MicroROM 
+# reading modelsim.ini
+# Loading project Topor
+vsim work.microromholder
+# vsim work.microromholder 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.microromholder(bdf_type)
+# ** Warning: (vsim-3473) Component instance "b2v_inst : reg48" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /microromholder File: /home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd
+# Loading work.microrom(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+add wave -position end  sim:/microromholder/clock
+force -freeze sim:/microromholder/clock 1 0, 0 {50 ps} -r 100
+run
+# ** Error: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microromholder/b2v_rom/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /microromholder/b2v_rom/altsyncram_component/MEMORY File: /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd line 39942
+# 
+# HDL call sequence:
+# Stopped at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 39942 Subprogram read_my_memory
+# called from  /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 41786 Process MEMORY
+# 
+add wave -position end  sim:/microromholder/addr
+force -freeze sim:/microromholder/addr 10#0 0
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 39942 Subprogram read_my_memory
+# called from  /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 41786 Process MEMORY
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 39942 Subprogram read_my_memory
+# called from  /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 41786 Process MEMORY
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 39942 Subprogram read_my_memory
+# called from  /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 41786 Process MEMORY
+# 
+quit -sim
+vsim work.microrom
+# vsim work.microrom 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.microrom(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+add wave -position end  sim:/microrom/address
+add wave -position end  sim:/microrom/q
+add wave -position end  sim:/microrom/clock
+force -freeze sim:/microrom/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/microrom/address 10#0 0
+run
+# ** Error: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microrom/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /microrom/altsyncram_component/MEMORY File: /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd line 39942
+# 
+# HDL call sequence:
+# Stopped at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 39942 Subprogram read_my_memory
+# called from  /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 41786 Process MEMORY
+# 
+quit -sim
+# ** Error: (vish-4000) A design must be loaded before the "GUIGetFileInstMap" command can be used.
+# ** Error: (vish-4000) A design must be loaded before the "GUIGetFileInstMap" command can be used.
+# Compile of MicroROMHolder.vhd was successful.
+vsim work.microromholder
+# vsim work.microromholder 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.microromholder(bdf_type)
+# ** Warning: (vsim-3473) Component instance "b2v_inst : reg48" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /microromholder File: /home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd
+# Loading work.microrom(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+run
+# ** Error: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microromholder/b2v_rom/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /microromholder/b2v_rom/altsyncram_component/MEMORY File: /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd line 39942
+# 
+# HDL call sequence:
+# Stopped at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 39942 Subprogram read_my_memory
+# called from  /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 41786 Process MEMORY
+# 
+quit -sim
+vsim work.microromholder
+# vsim work.microromholder 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.microromholder(bdf_type)
+# ** Warning: (vsim-3473) Component instance "b2v_inst : reg48" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /microromholder File: /home/roma/KPI/arch/s2/Topor/MicroROMHolder.vhd
+# Loading work.microrom(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+add wave -position end  sim:/microromholder/clock
+force -freeze sim:/microromholder/clock 1 0, 0 {50 ps} -r 100
+run
+# ** Error: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /microromholder/b2v_rom/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "micro.hex" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /microromholder/b2v_rom/altsyncram_component/MEMORY File: /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd line 39942
+# 
+# HDL call sequence:
+# Stopped at /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 39942 Subprogram read_my_memory
+# called from  /opt/altera/12.1sp1/modelsim_ase/linux/../altera/vhdl/src/altera_mf/altera_mf.vhd 41786 Process MEMORY
+# 
+# A time value could not be extracted from the current line
