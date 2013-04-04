@@ -29,7 +29,7 @@ ALU.vhd: ALU.bdf
 	$(CONVERT)ALU.bdf
 
 
-test: convert test_bmc
+test: convert test_bmc test_alu
 
 stest1:
 	tpcasm -q firmware/test1.asm micro.hex

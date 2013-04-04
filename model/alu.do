@@ -20,7 +20,7 @@ force -freeze sim:/alu/clock 1 0, 0 {50 ps} -r 100
 force sim:/alu/write 0
 
 proc check_signal { signal taddr } {
-    puts "$signal [examine -radix decimal $signal] (test $taddr)"
+    # puts "$signal [examine -radix decimal $signal] (test $taddr)"
     return [expr [string compare [examine -radix decimal $signal] $taddr] != 0]
 }
 
