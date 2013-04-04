@@ -180,6 +180,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect -296 936 -128 952)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "write" (rect 5 0 27 10)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 2272 240 2448 256)
 	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
@@ -2392,15 +2408,56 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 56 1256 88 1288)
+	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
+	(text "inst37" (rect 3 21 32 31)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 80 744 112 776)
+	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
+	(text "inst38" (rect 3 21 32 31)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
 	(rect -112 656 16 1216)
 	(text "dc16x1" (rect 44 0 93 15)(font "Arial" (font_size 10)))
 	(text "inst46" (rect 8 546 37 556)(font "Arial" ))
 	(port
-		(pt 0 280)
+		(pt 0 272)
 		(input)
 		(text "data[4..0]" (rect 0 0 53 12)(font "Arial" (font_size 8)))
-		(text "data[4..0]" (rect 20 274 73 286)(font "Arial" (font_size 8)))
-		(line (pt 0 280)(pt 16 280)(line_width 3))
+		(text "data[4..0]" (rect 20 266 73 278)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "enable" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 282 57 294)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
 	)
 	(port
 		(pt 128 32)
@@ -2639,40 +2696,6 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
-	)
-)
-(symbol
-	(rect 0 1256 32 1288)
-	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
-	(text "inst37" (rect 3 21 32 31)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16))
-		(line (pt 16 16)(pt 24 8))
-		(line (pt 8 8)(pt 24 8))
-	)
-)
-(symbol
-	(rect 80 744 112 776)
-	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
-	(text "inst38" (rect 3 21 32 31)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16))
-		(line (pt 16 16)(pt 24 8))
-		(line (pt 8 8)(pt 24 8))
 	)
 )
 (block
@@ -4137,11 +4160,6 @@ applicable agreement for further details.
 	(pt 872 856)
 )
 (connector
-	(text "o_IC" (rect 24 680 47 690)(font "Arial" ))
-	(pt 16 688)
-	(pt 56 688)
-)
-(connector
 	(text "o_SP" (rect 24 696 49 706)(font "Arial" ))
 	(pt 16 704)
 	(pt 56 704)
@@ -4150,12 +4168,6 @@ applicable agreement for further details.
 	(text "o_flags" (rect 28 712 64 722)(font "Arial" ))
 	(pt 16 720)
 	(pt 56 720)
-)
-(connector
-	(text "op1[4..0]" (rect -160 928 -117 938)(font "Arial" ))
-	(pt -112 936)
-	(pt -152 936)
-	(bus)
 )
 (connector
 	(text "o_0" (rect 24 744 41 754)(font "Arial" ))
@@ -4494,10 +4506,6 @@ applicable agreement for further details.
 	(pt 2232 632)
 )
 (connector
-	(pt 16 944)
-	(pt 40 944)
-)
-(connector
 	(pt 16 960)
 	(pt 40 960)
 )
@@ -4508,14 +4516,6 @@ applicable agreement for further details.
 (connector
 	(pt 16 992)
 	(pt 40 992)
-)
-(connector
-	(pt 40 944)
-	(pt 40 960)
-)
-(connector
-	(pt 40 960)
-	(pt 40 976)
 )
 (connector
 	(pt 40 976)
@@ -4602,36 +4602,63 @@ applicable agreement for further details.
 	(pt 40 1152)
 )
 (connector
-	(pt 16 1168)
-	(pt 40 1168)
-)
-(connector
 	(pt 40 1152)
 	(pt 40 1168)
-)
-(connector
-	(pt 16 1184)
-	(pt 40 1184)
-)
-(connector
-	(pt 40 1168)
-	(pt 40 1184)
-)
-(connector
-	(pt 40 1256)
-	(pt 16 1256)
-)
-(connector
-	(pt 40 1184)
-	(pt 40 1256)
 )
 (connector
 	(pt 16 736)
 	(pt 96 736)
 )
 (connector
+	(pt 16 688)
+	(pt 96 688)
+)
+(connector
+	(pt 96 688)
+	(pt 96 736)
+)
+(connector
 	(pt 96 736)
 	(pt 96 744)
+)
+(connector
+	(text "o_IC" (rect 24 1176 47 1186)(font "Arial" ))
+	(pt 16 1184)
+	(pt 56 1184)
+)
+(connector
+	(pt 72 1168)
+	(pt 72 1256)
+)
+(connector
+	(pt 16 1168)
+	(pt 40 1168)
+)
+(connector
+	(pt 40 1168)
+	(pt 72 1168)
+)
+(connector
+	(pt 16 944)
+	(pt 40 944)
+)
+(connector
+	(pt 40 944)
+	(pt 40 960)
+)
+(connector
+	(pt 40 960)
+	(pt 40 976)
+)
+(connector
+	(text "op1[4..0]" (rect -160 920 -117 930)(font "Arial" ))
+	(pt -112 928)
+	(pt -152 928)
+	(bus)
+)
+(connector
+	(pt -128 944)
+	(pt -112 944)
 )
 (junction (pt 264 680))
 (junction (pt 464 680))
@@ -4665,7 +4692,6 @@ applicable agreement for further details.
 (junction (pt 2240 968))
 (junction (pt 2240 840))
 (junction (pt 2240 888))
-(junction (pt 40 960))
 (junction (pt 40 976))
 (junction (pt 40 992))
 (junction (pt 40 1008))
@@ -4678,10 +4704,12 @@ applicable agreement for further details.
 (junction (pt 40 1120))
 (junction (pt 40 1136))
 (junction (pt 40 1152))
+(junction (pt 96 736))
 (junction (pt 40 1168))
-(junction (pt 40 1184))
+(junction (pt 40 960))
 (text "(mov)" (rect 1144 512 1177 524)(font "Arial" (font_size 8)))
 (text "(movl, jmp)" (rect 1128 488 1189 500)(font "Arial" (font_size 8)))
 (text "mjcmd" (rect 1128 352 1163 364)(font "Arial" (font_size 8)))
 (text "Carry flag" (rect 2336 696 2392 708)(font "Arial" (font_size 8)))
 (text "ZERO flag" (rect 2344 312 2401 324)(font "Arial" (font_size 8)))
+(text "default (NUL)" (rect 24 672 99 684)(font "Arial" (font_size 8)))

@@ -24,11 +24,18 @@ applicable agreement for further details.
 	(text "dc16x1" (rect 44 0 93 15)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 546 25 556)(font "Arial" ))
 	(port
-		(pt 0 280)
+		(pt 0 272)
 		(input)
 		(text "data[4..0]" (rect 0 0 53 12)(font "Arial" (font_size 8)))
-		(text "data[4..0]" (rect 20 274 65 285)(font "Arial" (font_size 8)))
-		(line (pt 0 280)(pt 16 280)(line_width 3))
+		(text "data[4..0]" (rect 20 266 65 277)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "enable" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 282 52 293)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
 	)
 	(port
 		(pt 128 32)

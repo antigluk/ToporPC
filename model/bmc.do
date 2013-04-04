@@ -22,16 +22,16 @@ force sim:/bmc/reset 1
 force sim:/bmc/flags 16#1
 
 proc check_signal { signal taddr } {
-    # puts "$signal: [examine -radix hexadecimal $signal] (test $taddr)"
+    #puts "$signal: [examine -radix hexadecimal $signal] (test $taddr)"
     return [expr [string compare [examine -radix hexadecimal $signal] $taddr] != 0]
 }
 
 proc do_cycle { count } {
     for { set i 0 } { $i <= $count } { incr i } {
-        # puts -nonewline [examine -radix decimal sim:/bmc/b2v_delay_counter/q]
+        #puts -nonewline [examine -radix decimal sim:/bmc/b2v_delay_counter/q]
         run
     }
-    # puts ""
+    #puts ""
 }
 
 set result 0
