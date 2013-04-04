@@ -799,12 +799,6 @@ applicable agreement for further details.
 	(pt 992 752)
 )
 (connector
-	(text "control[24..21]" (rect 1011 848 1081 858)(font "Arial" ))
-	(pt 1080 856)
-	(pt 1000 856)
-	(bus)
-)
-(connector
 	(pt 1016 480)
 	(pt 1040 480)
 	(bus)
@@ -943,6 +937,12 @@ applicable agreement for further details.
 	(text "addr[15..0]" (rect 567 424 620 434)(font "Arial" ))
 	(pt 512 432)
 	(pt 624 432)
+	(bus)
+)
+(connector
+	(text "control[7..4]" (rect 1011 848 1070 858)(font "Arial" ))
+	(pt 1080 856)
+	(pt 1000 856)
 	(bus)
 )
 (junction (pt 480 488))
