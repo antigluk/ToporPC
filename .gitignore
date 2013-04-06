@@ -67,3 +67,5 @@ testbench/
 model/work/
 work/
 *.test
+transcript
+*.wlf
