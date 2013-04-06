@@ -1,4 +1,13 @@
-nop
-mmov R0, #3
-madd R0, #2 ; now R0 = 5
-nop
+mnop
+
+mmov R1,P1
+mmov P0,R1
+
+loop:
+
+madd R1,#1
+mmov P0,R1
+
+mjmp loop
+
+mnop

@@ -6,22 +6,22 @@ vlib work;
 vcom mux16to1x16bit.vhd mux16to1x1bit.vhd reg16.vhd mux21.vhd dc16x1.vhd mux32to1x16bit.vhd OPSELECT.vhd ALU.vhd;
 vsim -quiet work.alu;
 
-add wave -noupdate -radix decimal /alu/op1
-add wave -noupdate -radix decimal /alu/op2
-add wave -noupdate -radix decimal /alu/a
-add wave -noupdate -radix decimal /alu/b
-add wave -noupdate -radix decimal /alu/sp
-add wave -noupdate -radix decimal /alu/write
-add wave -noupdate -radix hexadecimal /alu/clock
+add wave -noupdate -radix unsigned /alu/op1
+add wave -noupdate -radix unsigned /alu/op2
+add wave -noupdate -radix unsigned /alu/a
+add wave -noupdate -radix unsigned /alu/b
+add wave -noupdate -radix unsigned /alu/sp
+add wave -noupdate -radix unsigned /alu/write
+add wave -noupdate -radix hexaunsigned /alu/clock
 # add wave -noupdate /alu/clock
-# add wave -noupdate -radix hexadecimal /microrom/address
+# add wave -noupdate -radix hexaunsigned /microrom/address
 
 force -freeze sim:/alu/clock 1 0, 0 {50 ps} -r 100
 force sim:/alu/write 0
 
 proc check_signal { signal taddr } {
-    # puts "$signal [examine -radix decimal $signal] (test $taddr)"
-    return [expr [string compare [examine -radix decimal $signal] $taddr] != 0]
+    # puts "$signal [examine -radix unsigned $signal] (test $taddr)"
+    return [expr [string compare [examine -radix unsigned $signal] $taddr] != 0]
 }
 
 set result 0

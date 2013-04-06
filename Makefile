@@ -1,6 +1,11 @@
 CONVERT := quartus_map --read_settings_files=on --write_settings_files=off ToporPC -c ToporPC \
 	--convert_bdf_to_vhdl=/home/roma/KPI/arch/s2/Topor/
 
+BDFS := $(wildcard *.bdf)
+TO_CONVERT := $(patsubst %.bdf,%.vhd,$(BDFS))
+VHDS := $(sort $(patsubst %.bdf,%.vhd,$(BDFS)) $(wildcard *.vhd))
+
+TESTS := $(notdir $(patsubst %.do,%,$(wildcard ./model/*.do)))
 
 all: micro firmware
 
@@ -14,56 +19,48 @@ firmware:
 	cp *.hex simulation/modelsim/
 
 
-convert: CalcU.vhd OPSELECT.vhd BMC.vhd ALU.vhd
+convert: $(TO_CONVERT)
 
-CalcU.vhd: CalcU.bdf
-	$(CONVERT)CalcU.bdf
+$(TO_CONVERT): %.vhd: %.bdf
+	$(CONVERT)$<
 
-OPSELECT.vhd: OPSELECT.bdf
-	$(CONVERT)OPSELECT.bdf
+test: $(TESTS)
+# convert test_bmc test_alu
 
-BMC.vhd: BMC.bdf
-	$(CONVERT)BMC.bdf
+$(TESTS): %: test_%
 
-ALU.vhd: ALU.bdf
-	$(CONVERT)ALU.bdf
-
-
-test: convert test_bmc test_alu
-
-stest1:
-	tpcasm -q firmware/test1.asm micro.hex
+test1.asm test2.asm test3.asm:
+	tpcasm -q firmware/$@ micro.hex
 	cp *.hex simulation/modelsim/
 
-stest2:
-	tpcasm -q firmware/test2.asm micro.hex
-	cp *.hex simulation/modelsim/
-
-
-test_rom: stest1
+test_rom: convert test1.asm
 	tpcasm -q firmware/test1.asm micro.hex
 	cp *.hex simulation/modelsim/
 	./model/domodel.sh model/rom.do
 
-test_rom_holder: stest1 test_rom
+test_rom_holder: convert test1.asm test_rom
 	./model/domodel.sh model/rom_holder.do
 
-test_bmc: test_rom_holder stest2
+test_bmc: convert test_rom_holder test2.asm
 	tpcasm -q firmware/test2.asm micro.hex
 	cp *.hex simulation/modelsim/
 	./model/domodel.sh model/bmc.do
 
-test_calcu: test_or test_and test_xor
+test_calcu: convert test_or test_and test_xor
 	./model/domodel.sh model/calcu.do
 
-test_or:
+test_or: convert
 	./model/domodel.sh model/or.do
 
-test_and:
+test_and: convert
 	./model/domodel.sh model/and.do
 
-test_xor:
+test_xor: convert
 	./model/domodel.sh model/xor.do
 
 test_alu: convert test_calcu
 	./model/domodel.sh model/alu.do
+
+test_cpu: convert test3.asm
+	./model/domodel.sh model/cpu.do
+
