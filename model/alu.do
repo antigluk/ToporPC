@@ -12,7 +12,8 @@ add wave -noupdate -radix unsigned /alu/a
 add wave -noupdate -radix unsigned /alu/b
 add wave -noupdate -radix unsigned /alu/sp
 add wave -noupdate -radix unsigned /alu/write
-add wave -noupdate -radix hexaunsigned /alu/clock
+add wave -noupdate -radix unsigned /alu/clock
+add wave -noupdate -radix binary /alu/FLAGS
 # add wave -noupdate /alu/clock
 # add wave -noupdate -radix hexaunsigned /microrom/address
 
@@ -25,7 +26,7 @@ proc check_signal { signal taddr } {
 }
 
 set result 0
-
+force sim:/alu/flags_enable 0
 # mmov SP,#150
 force sim:/alu/cmd 10#0
 force sim:/alu/op1 10#1
@@ -148,6 +149,19 @@ force sim:/alu/write 1
 run
 force sim:/alu/write 0
 set result [expr $result + [check_signal /alu/sp 272]]
+
+
+# msub SP,#272  (272-272=0)
+force sim:/alu/cmd 10#4
+force sim:/alu/op1 10#1
+force sim:/alu/op2 10#20
+force sim:/alu/ext 10#272
+force sim:/alu/flags_enable 1
+run
+force sim:/alu/write 1
+run
+force sim:/alu/write 0
+set result [expr $result + [check_signal /alu/sp 0]]
 
 puts "$result"
 

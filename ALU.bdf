@@ -183,7 +183,7 @@ applicable agreement for further details.
 	(input)
 	(rect -24 208 160 224)
 	(text "INPUT" (rect 141 0 170 9)(font "Arial" (font_size 6)))
-	(text "port_input[15..0]" (rect 5 0 86 10)(font "Arial" ))
+	(text "port_input[15..0]" (rect 5 0 85 10)(font "Arial" ))
 	(pt 184 8)
 	(drawing
 		(line (pt 100 12)(pt 125 12))
@@ -2744,6 +2744,23 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 192 400))
 	)
 )
+(symbol
+	(rect 2464 344 2496 376)
+	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
+	(text "inst47" (rect 3 21 32 31)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (block
 	(rect 1400 792 1856 1112)
 	(text "CalcU" (rect 5 5 38 17)(font "Arial" (font_size 8)))	(text "inst39" (rect 5 307 34 317)(font "Arial" ))	(block_io "A[15..0]" (input))
@@ -3919,12 +3936,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "out_flags[15..0]" (rect 1008 1368 1085 1378)(font "Arial" ))
-	(pt 1064 1376)
-	(pt 1000 1376)
-	(bus)
-)
-(connector
 	(pt 1304 1496)
 	(pt 1304 1520)
 )
@@ -4438,12 +4449,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "out_data[15..0]" (rect 1000 1352 1074 1362)(font "Arial" ))
-	(pt 1064 1360)
-	(pt 992 1360)
-	(bus)
-)
-(connector
 	(text "out_data[15]" (rect 2240 288 2301 298)(font "Arial" ))
 	(pt 2272 296)
 	(pt 2232 296)
@@ -4717,6 +4722,29 @@ applicable agreement for further details.
 	(text "port_input[15..0]" (rect 664 208 744 218)(font "Arial" ))
 	(pt 752 216)
 	(pt 656 216)
+	(bus)
+)
+(connector
+	(text "out_flags[15..0]" (rect 1008 1352 1085 1362)(font "Arial" ))
+	(pt 1064 1360)
+	(pt 1000 1360)
+	(bus)
+)
+(connector
+	(text "out_data[15..0]" (rect 1000 1368 1074 1378)(font "Arial" ))
+	(pt 1064 1376)
+	(pt 992 1376)
+	(bus)
+)
+(connector
+	(pt 2480 344)
+	(pt 2480 320)
+	(bus)
+)
+(connector
+	(text "out_flags[15..3]" (rect 2493 312 2570 322)(font "Arial" ))
+	(pt 2480 320)
+	(pt 2512 320)
 	(bus)
 )
 (junction (pt 264 680))

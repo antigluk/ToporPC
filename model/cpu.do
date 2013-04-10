@@ -24,6 +24,7 @@ add wave -noupdate -radix unsigned /cpu/p1_out
 add wave -noupdate -radix unsigned /cpu/p0_in
 add wave -noupdate -radix unsigned /cpu/p1_in
 add wave -noupdate -radix unsigned /cpu/port_input
+add wave -noupdate -radix unsigned /cpu/b2v_ALU/flags_enable
 
 force -freeze sim:/cpu/clock 1 0, 0 {50 ps} -r 100
 force sim:/cpu/reset 1
@@ -42,20 +43,28 @@ proc do_cycle { count } {
 }
 
 set result 0
-
+set wait_num 7
 #reset is 1
 do_cycle  4
 force sim:/cpu/reset 0
 force sim:/cpu/p1_in 10#50
 set result [expr $result + [check_signal /cpu/p0_out 0]]
-do_cycle  12
+do_cycle  8
 set result [expr $result + [check_signal /cpu/p0_out 50]]
-do_cycle  [expr 4*4]
+do_cycle  [expr 4*$wait_num]
 set result [expr $result + [check_signal /cpu/p0_out 51]]
-do_cycle  [expr 4*4]
+do_cycle  [expr 4*$wait_num]
 set result [expr $result + [check_signal /cpu/p0_out 52]]
-do_cycle  [expr 4*4]
+do_cycle  [expr 4*$wait_num]
 set result [expr $result + [check_signal /cpu/p0_out 53]]
+do_cycle  [expr 4*$wait_num]
+set result [expr $result + [check_signal /cpu/p0_out 54]]
+do_cycle  [expr 4*$wait_num]
+set result [expr $result + [check_signal /cpu/p0_out 55]]
+do_cycle  [expr 4*$wait_num]
+set result [expr $result + [check_signal /cpu/p0_out 55]]
+do_cycle  [expr 4*$wait_num]
+set result [expr $result + [check_signal /cpu/p0_out 55]]
 
 puts "$result"
 
