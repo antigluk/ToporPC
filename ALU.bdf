@@ -275,6 +275,38 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 480 624 656 640)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "R0[15..0]" (rect 90 0 136 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 16 1144 192 1160)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "port_out_R0" (rect 90 0 150 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 304 704 448 832)
 	(text "reg16" (rect 57 0 94 15)(font "Arial" (font_size 10)))
@@ -4614,16 +4646,8 @@ applicable agreement for further details.
 	(pt 40 1120)
 )
 (connector
-	(pt 16 1136)
-	(pt 40 1136)
-)
-(connector
 	(pt 40 1120)
 	(pt 40 1136)
-)
-(connector
-	(pt 40 1136)
-	(pt 40 1152)
 )
 (connector
 	(pt 16 736)
@@ -4659,18 +4683,6 @@ applicable agreement for further details.
 (connector
 	(pt -128 944)
 	(pt -112 944)
-)
-(connector
-	(pt 16 1152)
-	(pt 40 1152)
-)
-(connector
-	(pt 40 1152)
-	(pt 72 1152)
-)
-(connector
-	(pt 72 1152)
-	(pt 72 1256)
 )
 (connector
 	(pt 40 944)
@@ -4747,6 +4759,24 @@ applicable agreement for further details.
 	(pt 2512 320)
 	(bus)
 )
+(connector
+	(text "R0[15..0]" (rect 424 624 470 634)(font "Arial" ))
+	(pt 480 632)
+	(pt 416 632)
+	(bus)
+)
+(connector
+	(pt 72 1136)
+	(pt 72 1256)
+)
+(connector
+	(pt 16 1136)
+	(pt 40 1136)
+)
+(connector
+	(pt 40 1136)
+	(pt 72 1136)
+)
 (junction (pt 264 680))
 (junction (pt 464 680))
 (junction (pt 664 680))
@@ -4789,15 +4819,15 @@ applicable agreement for further details.
 (junction (pt 40 1088))
 (junction (pt 40 1104))
 (junction (pt 40 1120))
-(junction (pt 40 1136))
 (junction (pt 96 736))
-(junction (pt 40 1152))
 (junction (pt 40 960))
 (junction (pt 504 200))
 (junction (pt 960 200))
+(junction (pt 40 1136))
 (text "(mov)" (rect 1144 512 1177 524)(font "Arial" (font_size 8)))
 (text "(movl, jmp)" (rect 1128 488 1189 500)(font "Arial" (font_size 8)))
 (text "mjcmd" (rect 1128 352 1163 364)(font "Arial" (font_size 8)))
 (text "Carry flag" (rect 2336 696 2392 708)(font "Arial" (font_size 8)))
 (text "ZERO flag" (rect 2344 312 2401 324)(font "Arial" (font_size 8)))
 (text "default (NUL)" (rect 24 672 99 684)(font "Arial" (font_size 8)))
+(text "TODO! port_out by R0" (rect 72 1144 195 1156)(font "Arial" (font_size 8)))

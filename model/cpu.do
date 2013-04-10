@@ -43,7 +43,7 @@ proc do_cycle { count } {
 }
 
 set result 0
-set wait_num 7
+set wait_num 8
 #reset is 1
 do_cycle  4
 force sim:/cpu/reset 0
