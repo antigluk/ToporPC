@@ -74,7 +74,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 96 240 112)
 	(text "INPUT" (rect 133 0 162 9)(font "Arial" (font_size 6)))
-	(text "ram_data[31..0]" (rect 5 0 82 10)(font "Arial" ))
+	(text "ram_data[15..0]" (rect 5 0 83 10)(font "Arial" ))
 	(pt 176 8)
 	(connected_pin (pt 0 0))
 	(drawing

@@ -10,12 +10,12 @@ TESTS := $(notdir $(patsubst %.do,%,$(wildcard ./model/*.do)))
 all: micro firmware
 
 micro:
-	tpcasm firmware/micro.asm micro.hex
+	tpcasm firmware/micro..masm micro.hex
 	cp *.hex simulation/modelsim/
 
 
 firmware:
-	tpcasm firmware/firmware.asm firmware.hex
+	tpcasm firmware/firmware.masm firmware.hex
 	cp *.hex simulation/modelsim/
 
 
@@ -29,20 +29,20 @@ test: $(TESTS)
 
 $(TESTS): %: test_%
 
-test1.asm test2.asm test3.asm:
+test1.masm test2.masm test3.masm:
 	tpcasm -q firmware/$@ micro.hex
 	cp *.hex simulation/modelsim/
 
-test_rom: convert test1.asm
-	tpcasm -q firmware/test1.asm micro.hex
+test_rom: convert test1.masm
+	tpcasm -q firmware/test1.masm micro.hex
 	cp *.hex simulation/modelsim/
 	./model/domodel.sh model/rom.do
 
-test_rom_holder: convert test1.asm test_rom
+test_rom_holder: convert test1.masm test_rom
 	./model/domodel.sh model/rom_holder.do
 
-test_bmc: convert test_rom_holder test2.asm
-	tpcasm -q firmware/test2.asm micro.hex
+test_bmc: convert test_rom_holder test2.masm
+	tpcasm -q firmware/test2.masm micro.hex
 	cp *.hex simulation/modelsim/
 	./model/domodel.sh model/bmc.do
 
@@ -61,6 +61,6 @@ test_xor: convert
 test_alu: convert test_calcu
 	./model/domodel.sh model/alu.do
 
-test_cpu: convert test3.asm
+test_cpu: convert test3.masm
 	./model/domodel.sh model/cpu.do
 

@@ -69,3 +69,5 @@ work/
 *.test
 transcript
 *.wlf
+output_files
+docs/build

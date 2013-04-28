@@ -1,0 +1,37 @@
+mmov R1,#0
+mmov R0,#0xFFFF
+mmov P0,R0
+
+loop:
+
+;mxor R0,#1
+;mmov P0, R0
+;madd R1,#1
+
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+mnop
+
+;mmov R2,R0
+;msub R2,#100, flags
+;mjz end
+
+;mjmp loop
+;end:

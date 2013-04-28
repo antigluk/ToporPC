@@ -133,22 +133,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -128 368 56 384)
-	(text "INPUT" (rect 141 0 170 9)(font "Arial" (font_size 6)))
-	(text "ram_data[31..0]" (rect 5 0 82 10)(font "Arial" ))
-	(pt 184 8)
-	(drawing
-		(line (pt 100 12)(pt 125 12))
-		(line (pt 100 4)(pt 125 4))
-		(line (pt 129 8)(pt 184 8))
-		(line (pt 100 12)(pt 100 4))
-		(line (pt 125 4)(pt 129 8))
-		(line (pt 125 12)(pt 129 8))
-	)
-	(text "VCC" (rect 144 7 164 16)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 0 80 168 96)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
 	(text "clock" (rect 5 0 30 10)(font "Arial" ))
@@ -200,6 +184,22 @@ applicable agreement for further details.
 	(rect -24 224 160 240)
 	(text "INPUT" (rect 141 0 170 9)(font "Arial" (font_size 6)))
 	(text "cmd_op2r[15..0]" (rect 5 0 85 10)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 164 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -128 368 56 384)
+	(text "INPUT" (rect 141 0 170 9)(font "Arial" (font_size 6)))
+	(text "ram_data[15..0]" (rect 5 0 83 10)(font "Arial" ))
 	(pt 184 8)
 	(drawing
 		(line (pt 100 12)(pt 125 12))
@@ -4374,18 +4374,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ram_data[23..8]" (rect 185 264 262 274)(font "Arial" ))
-	(pt 160 280)
-	(pt 296 280)
-	(bus)
-)
-(connector
-	(text "ram_data[23..8]" (rect 360 1616 437 1626)(font "Arial" ))
-	(pt 424 1632)
-	(pt 328 1632)
-	(bus)
-)
-(connector
 	(text "IC[15..0]" (rect 336 1632 379 1642)(font "Arial" ))
 	(pt 424 1648)
 	(pt 328 1648)
@@ -4430,12 +4418,6 @@ applicable agreement for further details.
 	(text "G0[15..0]" (rect 720 304 766 314)(font "Arial" ))
 	(pt 752 312)
 	(pt 712 312)
-	(bus)
-)
-(connector
-	(text "ram_data[23..8]" (rect 641 264 718 274)(font "Arial" ))
-	(pt 616 280)
-	(pt 752 280)
 	(bus)
 )
 (connector
@@ -4776,6 +4758,24 @@ applicable agreement for further details.
 (connector
 	(pt 40 1136)
 	(pt 72 1136)
+)
+(connector
+	(text "ram_data[15..0]" (rect 185 264 262 274)(font "Arial" ))
+	(pt 160 280)
+	(pt 296 280)
+	(bus)
+)
+(connector
+	(text "ram_data[15..0]" (rect 641 264 718 274)(font "Arial" ))
+	(pt 616 280)
+	(pt 752 280)
+	(bus)
+)
+(connector
+	(text "ram_data[15..0]" (rect 360 1616 437 1626)(font "Arial" ))
+	(pt 424 1632)
+	(pt 328 1632)
+	(bus)
 )
 (junction (pt 264 680))
 (junction (pt 464 680))
