@@ -29,11 +29,11 @@ test: $(TESTS)
 
 $(TESTS): %: test_%
 
-test1.masm test2.masm test3.masm:
+test1.masm test2.masm test3.masm test4.masm:
 	tpcasm -q firmware/$@ micro.hex
 	cp *.hex simulation/modelsim/
 
-test1.asm:
+test1.asm test2.asm:
 	tpcasm -q firmware/$@ firmware.hex
 	cp *.hex simulation/modelsim/
 
@@ -73,4 +73,7 @@ test_alu: convert test_calcu
 
 test_cpu: convert test3.masm
 	./model/domodel.sh model/cpu.do
+
+test_cpu_ram: convert test4.masm test2.asm
+	./model/domodel.sh model/cpu_ram.do
 

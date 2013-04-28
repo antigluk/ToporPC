@@ -1,0 +1,31 @@
+mmov IC,#0
+mmov SP,#255 ; на последнее слово
+
+main_loop:
+mnop
+mmov R1,@IC
+madd IC,#1
+mmov R2,@IC
+madd IC,#1
+
+mmov R3,R1
+mand R3,#0xFC00
+mshr R3,#10
+; do some stuff
+mmov R4,R3
+msub R4,#1, flags
+mjz MOV
+
+mmov R4,R3
+msub R4,#12, flags
+mjz OUT
+
+
+MOV:
+mmov R5,#0x3F
+mjmp main_loop
+
+
+OUT:
+mmov R5,#0x7A
+mjmp main_loop
