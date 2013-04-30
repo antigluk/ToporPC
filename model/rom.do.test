@@ -10,7 +10,4 @@ Reading /opt/altera/12.1sp1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity MicroROM
 # -- Compiling architecture SYN of microrom
 # vsim -quiet work.MicroROM 
-# Break key hit 
-# Simulation stop requested.
-# Simulation stop requested.
-1
+0

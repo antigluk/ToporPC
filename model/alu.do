@@ -128,7 +128,7 @@ force sim:/alu/write 0
 set result [expr $result + [check_signal /alu/sp 136]]
 
 # mshr SP,#2 (139 >> 2 = 34)
-force sim:/alu/cmd 10#8
+force sim:/alu/cmd 10#9
 force sim:/alu/op1 10#1
 force sim:/alu/op2 10#20
 force sim:/alu/ext 10#2
@@ -140,7 +140,7 @@ set result [expr $result + [check_signal /alu/sp 34]]
 
 
 # mshl SP,#3 (34 << 3 = 272)
-force sim:/alu/cmd 10#9
+force sim:/alu/cmd 10#8
 force sim:/alu/op1 10#1
 force sim:/alu/op2 10#20
 force sim:/alu/ext 10#3

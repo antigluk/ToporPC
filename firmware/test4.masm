@@ -22,7 +22,7 @@ mjz OUT
 
 
 MOV:
-mmov R5,#0x3F
+mmov op1w,op2r
 mjmp main_loop
 
 

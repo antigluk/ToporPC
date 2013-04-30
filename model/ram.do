@@ -19,15 +19,15 @@ proc check_addr {addr data} {
     run 10 ns
 
     #uncomment to see data
-    # puts [examine -radix hexadecimal sim:/ram/q]
+    # puts "[examine -radix hexadecimal sim:/ram/q] & $data"
     return [expr [string compare [examine -radix hexadecimal sim:/ram/q] $data] != 0]
 }
 
 set result 0
-set result [expr $result + [check_addr 0 "0000"]]
-set result [expr $result + [check_addr 1 "1441"]]
-set result [expr $result + [check_addr 2 "3000"]]
-set result [expr $result + [check_addr 3 "0422"]]
+set result [expr $result + [check_addr 0 "043F"]]
+set result [expr $result + [check_addr 1 "0005"]]
+set result [expr $result + [check_addr 2 "33E1"]]
+set result [expr $result + [check_addr 3 "0001"]]
 
 puts "$result"
 

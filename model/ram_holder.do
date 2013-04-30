@@ -32,10 +32,10 @@ proc check_addr {addr data} {
 }
 
 set result 0
-set result [expr $result + [check_addr 0 "0000"]]
-set result [expr $result + [check_addr 1 "1441"]]
-set result [expr $result + [check_addr 2 "3000"]]
-set result [expr $result + [check_addr 3 "0422"]]
+set result [expr $result + [check_addr 0 "043F"]]
+set result [expr $result + [check_addr 1 "0005"]]
+set result [expr $result + [check_addr 2 "33E1"]]
+set result [expr $result + [check_addr 3 "0001"]]
 
 #write test
 force -freeze sim:/ramholder/indata 16#ABAB
